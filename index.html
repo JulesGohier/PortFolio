@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+
+    	<!-- HTML Meta Tags -->
+      <title>Jules Gohier - Portfolio</title>
+      <meta name="description" content="IT student portfolio presenting my projects and skills.">
+
+      <!-- Facebook Meta Tags -->
+      <meta property="og:url" content="https://jules-gohier.Fr">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Jules Gohier - Portfolio">
+      <meta property="og:description" content="IT student portfolio presenting my projects and skills.">
+      <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/424878e6-3157-4e12-adc6-a5aff69b48e7.png?token=T7JVTz-zF2AcrluVKl5MOFt7l8xg4yqRDQ7rashmsJk&height=1024&width=1024&expires=33248152805">
+
+      <!-- Twitter Meta Tags -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta property="twitter:domain" content="jules-gohier.Fr">
+      <meta property="twitter:url" content="https://jules-gohier.Fr">
+      <meta name="twitter:title" content="Jules Gohier - Portfolio">
+      <meta name="twitter:description" content="IT student portfolio presenting my projects and skills.">
+      <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/424878e6-3157-4e12-adc6-a5aff69b48e7.png?token=T7JVTz-zF2AcrluVKl5MOFt7l8xg4yqRDQ7rashmsJk&height=1024&width=1024&expires=33248152805">
+
+      <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/scss/main.css" />
+    <link rel="shortcut icon" href="./src/assets/icons/home-bubble.ico" type="image/x-icon">
+
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+  </head>
+
+  <body>
+    <section id="section-home" class="home">
+      <header class="home-header">
+        <div
+          class="home-header-menu component-button"
+        >
+          <p>menu</p>
+        </div>
+        <img
+          class="home-header-bubble"
+          src="./src/assets/images/home-bubble.png"
+          alt="abstract form for website design"
+        />
+        <div class="home-header-toggle">
+          <div class="home-header-toggle-quit">
+            <svg
+              width="47"
+              height="47"
+              viewBox="0 0 47 47"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.5001 43.0834C34.3157 43.0834 43.0834 34.3156 43.0834 23.5C43.0834 12.6844 34.3157 3.91669 23.5001 3.91669C12.6845 3.91669 3.91675 12.6844 3.91675 23.5C3.91675 34.3156 12.6845 43.0834 23.5001 43.0834Z"
+                fill="#E6B7C3"
+                stroke="#1D3354"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.375 17.625L17.625 29.375"
+                stroke="#1D3354"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17.625 17.625L29.375 29.375"
+                stroke="#1D3354"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <ul class="home-header-toggle-list">
+            <li class="home-header-toggle-list-item component-button">
+              <a onclick="changeDisplay();" href="#section-home">home</a>
+            </li>
+            <li class="home-header-toggle-list-item component-button">
+              <a onclick="changeDisplay();" href="#section-about">about</a>
+            </li>
+            <li class="home-header-toggle-list-item component-button">
+              <a onclick="changeDisplay();" href="#section-project">projects</a>
+            </li>
+            <li class="home-header-toggle-list-item component-button">
+              <a onclick="changeDisplay();" href="#section-skills">skills</a>
+            </li>
+            <li class="home-header-toggle-list-item component-button">
+              <a onclick="changeDisplay();" href="#section-contact">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="home-header-nav component-button">
+          <li class="hover-effect-button"><a href="#section-home">home</a></li>
+          <li class="hover-effect-button">
+            <a href="#section-about">about</a>
+          </li>
+          <li class="hover-effect-button">
+            <a href="#section-project">projects</a>
+          </li>
+          <li class="hover-effect-button">
+            <a href="#section-skills">skills</a>
+          </li>
+          <li class="hover-effect-button">
+            <a href="#section-contact">contact</a>
+          </li>
+        </ul>
+      </header>
+      <main class="home-main">
+        <div class="home-main-text">
+          <p class="home-main-text-low">hi,<br />my name is</p>
+          <h1>jules gohier</h1>
+          <p class="home-main-text--after home-main-text-low">i'm an <span>it</span> student</p>
+
+          <div>
+            <a
+              class="home-main-text-start component-button"
+              href="#section-about"
+            >
+              <svg
+                width="25"
+                height="27"
+                viewBox="0 0 25 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.1701 1.53471V24.9453M12.1701 24.9453L22.503 16.1663M12.1701 24.9453L1.8371 16.1663"
+                  stroke="#1D3354"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p>start</p>
+              <svg
+                width="25"
+                height="27"
+                viewBox="0 0 25 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.1701 1.53471V24.9453M12.1701 24.9453L22.503 16.1663M12.1701 24.9453L1.8371 16.1663"
+                  stroke="#1D3354"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <img
+          class="home-main-logo"
+          src="./src/assets/images/home-logo.png"
+          alt="image generated by AI dalli showing me coding"
+        />
+        <a class="home-main-start component-button" href="#section-about">
+          <svg
+            width="25"
+            height="27"
+            viewBox="0 0 25 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.1701 1.53471V24.9453M12.1701 24.9453L22.503 16.1663M12.1701 24.9453L1.8371 16.1663"
+              stroke="#1D3354"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p>start</p>
+          <svg
+            width="25"
+            height="27"
+            viewBox="0 0 25 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.1701 1.53471V24.9453M12.1701 24.9453L22.503 16.1663M12.1701 24.9453L1.8371 16.1663"
+              stroke="#1D3354"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </main>
+
+      <footer class="home-footer">
+        <ul class="home-footer-marquee">
+          <li class="home-footer-marquee-item">welcome</li>
+        </ul>
+      </footer>
+    </section>
+    <section id="section-about" class="about">
+      <img
+        class="about-shape"
+        src="./src/assets/images/about-shape.png"
+        alt="abstract form for website design"
+      />
+      <div class="about-window">
+        <div class="about-window-header">
+          <p>about</p>
+        </div>
+        <div class="about-window-content">
+          <div class="about-window-content-1">
+            <p>
+              <span class="about-window-content--path"
+                >@jules-gohier:~/About/Me/ $</span
+              >
+              Hello, my name is Jules Gohier, I'm 22 years old, and I develop things in my spare time.
+              Passionate about web development, I spend a great deal of my time exploring and testing different technologies and techniques.
+              Recently, I've also become interested in the DevOps world, seeking to understand how automation and collaboration between teams can improve the deployment and maintenance of web applications.
+            </p>
+          </div>
+          <br />
+          <div class="about-window-content-2">
+            <p>
+              <span class="about-window-content--path"
+                >@jules-gohier:~/About/Currently/ $</span
+              >
+              I am currently in my second year of computer science studies at the University of Angers.
+              I'm learning programming, algorithms, and theoretical computer science.
+              Alongside my studies, I'm constantly on the lookout for personal projects to put into practice what I'm learning in class.
+            </p>
+          </div>
+          <br />
+          <div class="about-window-content-3">
+            <p>
+              <span class="about-window-content--path"
+                >@jules-gohier:~/About/Goal/ $</span
+              >
+              My goal is to continue my studies in the field of web development by pursuing a professional degree with a specialization in DevOps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section-project" class="projects">
+      <h2>Projects</h2>
+      <div class="projects-carousel">
+        <ul class="projects-carousel-list">
+          <li
+            class="projects-carousel-list-item Cortex-Challenge"
+            data-position="-2"
+          >
+            <div class="projects-carousel-list-item-picture">
+              <img
+                src="./src/assets/images/Cortex Challenge.png"
+                alt="Cortex Challenge board game box"
+              />
+            </div>
+            <h3 class="projects-carousel-list-item-orign">School Project</h3>
+            <h4 class="projects-carousel-list-item-name">Cortex Challenge</h4>
+            <div class="projects-carousel-list-item-description">
+              <p>
+                School project by a pair of students aiming to create a virtual player that solves challenges inspired by the Cortex Challenge game.
+                Each challenge must be solved using the most optimal algorithms to solve them as quickly as possible.
+                From search algorithms (Depth-First Search) to optimization (Knapsack problem).
+              </p>
+            </div>
+            <div class="projects-carousel-list-item-code">
+              <a href="https://github.com/JulesGohier/Cortex-Challenge"
+                ><img src="./src/assets/icons/Icon Github.png" alt="github logo" 
+              /></a>
+              <a
+                href="https://leria-etud.univ-angers.fr/~jugohier/cortex_challenge/"
+                ><img
+                  class="projects-carousel-list-item-code"
+                  src="./src/assets/icons/start-icon.svg"
+                  alt="green start button"
+                  
+              /></a>
+            </div>
+            <p class="projects-carousel-list-item-language">
+              Python - HTML - CSS
+            </p>
+            <img
+              class="projects-carousel-list-item-wave"
+              src="./src/assets/images/wave.svg"
+              alt="abstract form for website design"
+            />
+          </li>
+          <li class="projects-carousel-list-item PortFolio" data-position="-1">
+            <div class="projects-carousel-list-item-picture">
+              <img src="./src/assets/images/home-logo2.png" alt="image generated by AI dalli showing me coding"  />
+            </div>
+            <h3 class="projects-carousel-list-item-orign">Personal Project</h3>
+            <h4 class="projects-carousel-list-item-name">PortFolio</h4>
+            <div class="projects-carousel-list-item-description">
+              <p>
+                Welcome to my portfolio! This website aims to showcase my projects and skills in computer science. This card provides access to the code of the website.
+              </p>
+            </div>
+            <div class="projects-carousel-list-item-code">
+              <a href="https://github.com/JulesGohier/PortFolio"
+                ><img src="./src/assets/icons/Icon Github.png" alt="logo github" 
+              /></a>
+              <a href="https://jules-gohier.fr/"
+                ><img
+                  class="projects-carousel-list-item-code"
+                  src="./src/assets/icons/start-icon.svg"
+                  alt="green start button"
+                  
+              /></a>
+            </div>
+            <p class="projects-carousel-list-item-language">
+              HTML - SCSS - JavaScript
+            </p>
+            <img
+              class="projects-carousel-list-item-wave"
+              src="./src/assets/images/wave.svg"
+              alt="abstract form for website design"
+            />
+          </li>
+          <li class="projects-carousel-list-item OnlyList" data-position="1">
+            <div class="projects-carousel-list-item-picture">
+              <img
+                src="./src/assets/images/onlylist-logo.png"
+                alt="onlylist project logo"
+                
+              />
+            </div>
+            <h3 class="projects-carousel-list-item-orign">Personal Project</h3>
+            <h4 class="projects-carousel-list-item-name">Only List</h4>
+            <div class="projects-carousel-list-item-description">
+              <p>
+                Available soon, click on the start button to see the figma model
+              </p>
+            </div>
+            <div class="projects-carousel-list-item-code">
+              <a href="#"
+                ><img src="./src/assets/icons/Icon Github.png" alt="github logo" 
+              /></a>
+              <a
+                href="https://www.figma.com/file/ndJz1mbt7z1sPZ3gEIUXa6/OnlyList?type=design&node-id=0%3A1&mode=design&t=WQcpGy4KrbzXJvPQ-1"
+                ><img
+                  class="projects-carousel-list-item-code"
+                  src="./src/assets/icons/start-icon.svg"
+                  alt="green start button"
+                  
+              /></a>
+            </div>
+            <p class="projects-carousel-list-item-language">
+              HTML - SCSS - JavaScript SQL - PHP
+            </p>
+            <img
+              class="projects-carousel-list-item-wave"
+              src="./src/assets/images/wave.svg"
+              alt="abstract form for website design"
+            />
+          </li>
+          <li class="projects-carousel-list-item DashBoard" data-position="0">
+            <div class="projects-carousel-list-item-picture">
+              <img
+                src="./src/assets/images/icon_brilliant-lab.png"
+                alt="brilliant lab project logo"
+                
+              />
+            </div>
+            <h3 class="projects-carousel-list-item-orign">Personal Project</h3>
+            <h4 class="projects-carousel-list-item-name">Brilliant Lab</h4>
+            <div class="projects-carousel-list-item-description">
+              <p>
+                Brilliant Lab is a website that allows me to test and showcase various small projects that I have created.
+                What sets it apart is the automation I've implemented to manage the incorporation of new projects into the lab (see GitHub).
+              </p>
+            </div>
+            <div class="projects-carousel-list-item-code">
+              <a href="https://www.figma.com/file/xRMJSUIGBCaADh6verbJ7G/Brilliant-Lab?type=design&node-id=0%3A1&mode=design&t=4YO0HLa6alQZzzW6-1"
+                ><img src="./src/assets/icons/Icon Github.png" alt="github logo" 
+              /></a>
+              <a href="https://www.figma.com/file/xRMJSUIGBCaADh6verbJ7G/Brilliant-Lab?type=design&node-id=0%3A1&mode=design&t=4YO0HLa6alQZzzW6-1"
+                ><img
+                  class="projects-carousel-list-item-code"
+                  src="./src/assets/icons/start-icon.svg"
+                  alt="green start button"
+                  
+              /></a>
+            </div>
+            <p class="projects-carousel-list-item-language">JavaScript - CSS</p>
+            <img
+              class="projects-carousel-list-item-wave"
+              src="./src/assets/images/wave.svg"
+              alt="abstract form for website design"
+            />
+          </li>
+          <li class="projects-carousel-list-item Aucune Idee" data-position="2">
+            <div class="projects-carousel-list-item-picture">
+              <img
+                src="./src/assets/images/nothing.png"
+                alt="no image"
+              />
+            </div>
+            <h3 class="projects-carousel-list-item-orign">Soon Project</h3>
+            <h4 class="projects-carousel-list-item-name">Soon</h4>
+            <div class="projects-carousel-list-item-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                eos vero voluptatum, voluptatibus harum ratione numquam
+                molestias magni cumque quasi? Modi illo optio corrupti maiores
+                possimus nam dignissimos eveniet. Quod?
+              </p>
+            </div>
+            <div class="projects-carousel-list-item-code">
+              <a href="#"
+                ><img src="./src/assets/icons/Icon Github.png" alt="github logo" 
+              /></a>
+              <a href="#"
+                ><img
+                  class="projects-carousel-list-item-code"
+                  src="./src/assets/icons/start-icon.svg"
+                  alt="green start button"
+                  
+              /></a>
+            </div>
+            <p class="projects-carousel-list-item-language">Python - Pygame</p>
+            <img
+              class="projects-carousel-list-item-wave"
+              src="./src/assets/images/wave.svg"
+              alt="abstract form for website design"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="section-skills" class="skills">
+      <h2>skills</h1>
+      <div class="skills-cards">
+        <div class="skills-cards-title">
+          <p>Web Front End</p>
+        </div>
+        <div class="skills-cards-items">
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/HTML-icon.png"
+              alt="HTLM logo"
+            />
+            <p class="skills-cards-items-item-name">HTML</p>
+          </div>
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/CSS-icon.png"
+              alt="CSS logo"
+            />
+            <p class="skills-cards-items-item-name">CSS</p>
+          </div>
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/SASS-icon.png"
+              alt="SASS (preprocessor) logo"
+            />
+            <p class="skills-cards-items-item-name">SASS</p>
+          </div>
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/JS-icon.png"
+              alt="JavaScript logo"
+            />
+            <p class="skills-cards-items-item-name">JavaScript</p>
+          </div>
+        </div>
+        <div class="skills-cards-wave">
+          <svg
+            width="407"
+            height="40"
+            viewBox="0 0 407 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 14.7694C46.9 -3.07677 60.4 -3.07677 41.5 14.7694C22.6 32.6155 36.1 32.6155 82 14.7694C127.9 -3.07677 141.4 -3.07677 122.5 14.7694C103.6 32.6155 117.1 32.6155 163 14.7694C208.9 -3.07677 222.4 -3.07677 203.5 14.7694C184.6 32.6155 198.1 32.6155 244 14.7694C289.9 -3.07677 303.4 -3.07677 284.5 14.7694C265.6 32.6155 279.1 32.6155 325 14.7694C370.9 -3.07677 384.4 -3.07677 365.5 14.7694C346.6 32.6155 360.1 32.6155 406 14.7694"
+              stroke="#1D3354"
+              stroke-width="2"
+            />
+            <path
+              d="M1 25.0772C46.9 7.23109 60.4 7.23109 41.5 25.0772C22.6 42.9234 36.1 42.9234 82 25.0772C127.9 7.23109 141.4 7.23109 122.5 25.0772C103.6 42.9234 117.1 42.9234 163 25.0772C208.9 7.23109 222.4 7.23109 203.5 25.0772C184.6 42.9234 198.1 42.9234 244 25.0772C289.9 7.23109 303.4 7.23109 284.5 25.0772C265.6 42.9234 279.1 42.9234 325 25.0772C370.9 7.23109 384.4 7.23109 365.5 25.0772C346.6 42.9234 360.1 42.9234 406 25.0772"
+              stroke="#1D3354"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="skills-cards">
+        <div class="skills-cards-title">
+          <p>Other</p>
+        </div>
+        <div class="skills-cards-items">
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/C++-icon.png"
+              alt="C++ logo"
+            />
+            <p class="skills-cards-items-item-name">C++</p>
+          </div>
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/JAVA-icon.png"
+              alt="Java logo"
+            />
+            <p class="skills-cards-items-item-name">Java</p>
+          </div>
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/PYTHON-icon.png"
+              alt="Python logo"
+            />
+            <p class="skills-cards-items-item-name">Python</p>
+          </div>
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/SQL-icon.png"
+              alt="SQL logo"
+            />
+            <p class="skills-cards-items-item-name">SQL</p>
+          </div>
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/PHP-icon.png"
+              alt="PHP logo"
+            />
+            <p class="skills-cards-items-item-name">PHP</p>
+          </div>
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/GIT-icon.png"
+              alt="Git log"
+            />
+            <p class="skills-cards-items-item-name">Git</p>
+          </div>
+        </div>
+        <div class="skills-cards-wave">
+          <svg
+            width="407"
+            height="40"
+            viewBox="0 0 407 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 14.7694C46.9 -3.07677 60.4 -3.07677 41.5 14.7694C22.6 32.6155 36.1 32.6155 82 14.7694C127.9 -3.07677 141.4 -3.07677 122.5 14.7694C103.6 32.6155 117.1 32.6155 163 14.7694C208.9 -3.07677 222.4 -3.07677 203.5 14.7694C184.6 32.6155 198.1 32.6155 244 14.7694C289.9 -3.07677 303.4 -3.07677 284.5 14.7694C265.6 32.6155 279.1 32.6155 325 14.7694C370.9 -3.07677 384.4 -3.07677 365.5 14.7694C346.6 32.6155 360.1 32.6155 406 14.7694"
+              stroke="#1D3354"
+              stroke-width="2"
+            />
+            <path
+              d="M1 25.0772C46.9 7.23109 60.4 7.23109 41.5 25.0772C22.6 42.9234 36.1 42.9234 82 25.0772C127.9 7.23109 141.4 7.23109 122.5 25.0772C103.6 42.9234 117.1 42.9234 163 25.0772C208.9 7.23109 222.4 7.23109 203.5 25.0772C184.6 42.9234 198.1 42.9234 244 25.0772C289.9 7.23109 303.4 7.23109 284.5 25.0772C265.6 42.9234 279.1 42.9234 325 25.0772C370.9 7.23109 384.4 7.23109 365.5 25.0772C346.6 42.9234 360.1 42.9234 406 25.0772"
+              stroke="#1D3354"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="skills-cards">
+        <div class="skills-cards-title">
+          <p>Design</p>
+        </div>
+        <div class="skills-cards-items">
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/AF-icon.png"
+              alt="Affinity Photo logo"
+            />
+            <p class="skills-cards-items-item-name">Affinity Photo</p>
+          </div>
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/FIGMA-icon.png"
+              alt="Figma logo"
+            />
+            <p class="skills-cards-items-item-name">Figma</p>
+          </div>
+          <div class="skills-cards-items-item">
+            <img
+              class="skills-cards-items-item-logo"
+              src="./src/assets/icons/SW-icon.png"
+              alt="SolidWorks logo"
+            />
+            <p class="skills-cards-items-item-name">SolidWorks</p>
+          </div>
+        </div>
+        <div class="skills-cards-wave">
+          <svg
+            width="407"
+            height="40"
+            viewBox="0 0 407 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 14.7694C46.9 -3.07677 60.4 -3.07677 41.5 14.7694C22.6 32.6155 36.1 32.6155 82 14.7694C127.9 -3.07677 141.4 -3.07677 122.5 14.7694C103.6 32.6155 117.1 32.6155 163 14.7694C208.9 -3.07677 222.4 -3.07677 203.5 14.7694C184.6 32.6155 198.1 32.6155 244 14.7694C289.9 -3.07677 303.4 -3.07677 284.5 14.7694C265.6 32.6155 279.1 32.6155 325 14.7694C370.9 -3.07677 384.4 -3.07677 365.5 14.7694C346.6 32.6155 360.1 32.6155 406 14.7694"
+              stroke="#1D3354"
+              stroke-width="2"
+            />
+            <path
+              d="M1 25.0772C46.9 7.23109 60.4 7.23109 41.5 25.0772C22.6 42.9234 36.1 42.9234 82 25.0772C127.9 7.23109 141.4 7.23109 122.5 25.0772C103.6 42.9234 117.1 42.9234 163 25.0772C208.9 7.23109 222.4 7.23109 203.5 25.0772C184.6 42.9234 198.1 42.9234 244 25.0772C289.9 7.23109 303.4 7.23109 284.5 25.0772C265.6 42.9234 279.1 42.9234 325 25.0772C370.9 7.23109 384.4 7.23109 365.5 25.0772C346.6 42.9234 360.1 42.9234 406 25.0772"
+              stroke="#1D3354"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+      </div>
+        <img
+          class="skills-img-spiral"
+          src="./src/assets/images/skills-spiral.png"
+          alt="abstract form for website design"
+      />
+      <img
+        class="skills-img-wave"
+        src="./src/assets/images/skills-wave.png"
+        alt="abstract form for website design"
+      />
+    </section>
+    <address id="section-contact" class="contact">
+      <div class="contact-container">
+        <ul class="contact-container-button">
+          <li class="component-button">
+            <a
+              class="contact-container-button-item"
+              target="_blank"
+              href="https://linkedin.com/in/jules-gohier5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1D3354"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <p>linkedin</p>
+            </a>
+          </li>
+          <li class="component-button">
+            <a href="mailto:jules.gohier@outlook.fr" class="contact-container-button-item" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <p>e-mail</p>
+            </a>
+          </li>
+          <li class="component-button">
+            <a
+              class="contact-container-button-item"
+              target="_blank"
+              href="https://github.com/JulesGohier"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1D3354"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <p>github</p>
+            </a>
+          </li>
+          <li class="component-button">
+            <a
+              target="_blank"
+              href="./src/assets/document/CV.pdf"
+              class="contact-container-button-item"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1D3354"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-download"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <p>cv</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="message-container">
+        <svg
+          width="737"
+          height="42"
+          viewBox="0 0 737 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 14.3846C61.6333 -3.46154 79.4667 -3.46154 54.5 14.3846C29.5333 32.2308 47.3667 32.2308 108 14.3846C168.633 -3.46154 186.467 -3.46154 161.5 14.3846C136.533 32.2308 154.367 32.2308 215 14.3846C275.633 -3.46154 293.467 -3.46154 268.5 14.3846C243.533 32.2308 261.367 32.2308 322 14.3846C382.633 -3.46154 400.467 -3.46154 375.5 14.3846C350.533 32.2308 368.367 32.2308 429 14.3846C489.633 -3.46154 507.467 -3.46154 482.5 14.3846C457.533 32.2308 475.367 32.2308 536 14.3846"
+            stroke="#1D3354"
+            stroke-width="2"
+          />
+          <path
+            d="M1 24.6925C61.6333 6.84632 79.4667 6.84632 54.5 24.6925C29.5333 42.5386 47.3667 42.5386 108 24.6925C168.633 6.84632 186.467 6.84632 161.5 24.6925C136.533 42.5386 154.367 42.5386 215 24.6925C275.633 6.84632 293.467 6.84632 268.5 24.6925C243.533 42.5386 261.367 42.5386 322 24.6925C382.633 6.84632 400.467 6.84632 375.5 24.6925C350.533 42.5386 368.367 42.5386 429 24.6925C489.633 6.84632 507.467 6.84632 482.5 24.6925C457.533 42.5386 475.367 42.5386 536 24.6925"
+            stroke="#1D3354"
+            stroke-width="2"
+          />
+          <path
+            d="M529 16.3846C589.633 -1.46154 607.467 -1.46154 582.5 16.3846C557.533 34.2308 575.367 34.2308 636 16.3846C696.633 -1.46154 714.467 -1.46154 689.5 16.3846C664.533 34.2308 682.367 34.2308 743 16.3846"
+            stroke="#1D3354"
+            stroke-width="2"
+          />
+          <path
+            d="M529 26.6925C589.633 8.84632 607.467 8.84632 582.5 26.6925C557.533 44.5386 575.367 44.5386 636 26.6925C696.633 8.84632 714.467 8.84632 689.5 26.6925C664.533 44.5386 682.367 44.5386 743 26.6925"
+            stroke="#1D3354"
+            stroke-width="2"
+          />
+        </svg>
+
+        <p>
+          Built by Jules Gohier using only HTML, SCSS and JavaScript. <br />
+          Thank you for reading to the end, I hope you enjoyed this website.
+        </p>
+
+        <svg
+          width="737"
+          height="42"
+          viewBox="0 0 737 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 14.3846C61.6333 -3.46154 79.4667 -3.46154 54.5 14.3846C29.5333 32.2308 47.3667 32.2308 108 14.3846C168.633 -3.46154 186.467 -3.46154 161.5 14.3846C136.533 32.2308 154.367 32.2308 215 14.3846C275.633 -3.46154 293.467 -3.46154 268.5 14.3846C243.533 32.2308 261.367 32.2308 322 14.3846C382.633 -3.46154 400.467 -3.46154 375.5 14.3846C350.533 32.2308 368.367 32.2308 429 14.3846C489.633 -3.46154 507.467 -3.46154 482.5 14.3846C457.533 32.2308 475.367 32.2308 536 14.3846"
+            stroke="#1D3354"
+            stroke-width="2"
+          />
+          <path
+            d="M1 24.6925C61.6333 6.84632 79.4667 6.84632 54.5 24.6925C29.5333 42.5386 47.3667 42.5386 108 24.6925C168.633 6.84632 186.467 6.84632 161.5 24.6925C136.533 42.5386 154.367 42.5386 215 24.6925C275.633 6.84632 293.467 6.84632 268.5 24.6925C243.533 42.5386 261.367 42.5386 322 24.6925C382.633 6.84632 400.467 6.84632 375.5 24.6925C350.533 42.5386 368.367 42.5386 429 24.6925C489.633 6.84632 507.467 6.84632 482.5 24.6925C457.533 42.5386 475.367 42.5386 536 24.6925"
+            stroke="#1D3354"
+            stroke-width="2"
+          />
+          <path
+            d="M529 16.3846C589.633 -1.46154 607.467 -1.46154 582.5 16.3846C557.533 34.2308 575.367 34.2308 636 16.3846C696.633 -1.46154 714.467 -1.46154 689.5 16.3846C664.533 34.2308 682.367 34.2308 743 16.3846"
+            stroke="#1D3354"
+            stroke-width="2"
+          />
+          <path
+            d="M529 26.6925C589.633 8.84632 607.467 8.84632 582.5 26.6925C557.533 44.5386 575.367 44.5386 636 26.6925C696.633 8.84632 714.467 8.84632 689.5 26.6925C664.533 44.5386 682.367 44.5386 743 26.6925"
+            stroke="#1D3354"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+    </address>
+    <script src="./src/javascript/main.js"></script>
+  </body>
+</html>

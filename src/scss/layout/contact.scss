@@ -1,0 +1,141 @@
+.contact {
+  height: 100vh;
+  width: 100%;
+  background: $background_section1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  font-style: normal;
+}
+
+.contact-container {
+  border: solid 3px $main-color;
+  border-radius: 30px;
+  width: 327px;
+  height: 335px;
+
+  display: flex;
+  align-items: center;
+
+  background: $card_color_main;
+  position: relative;
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  &-button-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.563rem;
+
+    width: 230px;
+    height: 45px;
+    position: relative;
+
+    & > svg {
+      position: absolute;
+      top: calc(50% - 24px / 2);
+      left: 20px;
+    }
+
+    &--copy {
+      cursor: pointer;
+    }
+  }
+}
+
+.contact-container::before {
+  position: absolute;
+  content: "contact";
+  text-transform: uppercase;
+
+  left: calc(50% - 169px / 2);
+  top: -22.5px;
+
+  background: #c7c3d8;
+
+  border: solid 3px $main-color;
+  border-radius: 30px;
+  padding: 0px 15px;
+}
+
+.message-container {
+  border: solid 3px $main-color;
+  border-radius: 30px;
+  width: 327px;
+  height: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-right: 15px;
+
+  overflow: hidden;
+  background: #b3c7d2;
+
+  & > p {
+    padding: 0px 15px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  & > svg {
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .contact {
+    height: 70vh;
+    gap: 60px;
+  }
+
+  .contact-container {
+    max-width: 650px;
+    width: 650px;
+    height: 210px;
+
+    margin-left: 15px;
+
+    &-button {
+      gap: 26px 120px;
+    }
+
+    &-button-item {
+      font-size: 1.75rem;
+
+      height: 50px;
+    }
+  }
+
+  .message-container {
+    max-width: 650px;
+    width: 650px;
+    height: 210px;
+
+    & > p {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+
+    & > svg {
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 1285px) {
+  .contact {
+    height: 50vh;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,232 @@
+.projects {
+  height: 110vh;
+  width: 100%;
+  background: $background_section1;
+  overflow: hidden;
+  position: relative;
+
+  & > h2 {
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 253.7px / 2);
+    text-transform: uppercase;
+    font-size: 3.125rem;
+  }
+}
+
+.projects-carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.projects-carousel-list {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+}
+
+.projects-carousel-list-item {
+  width: 255px;
+  height: 550px;
+
+  background-color: rgba(211, 204, 227, 66.66);
+
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.3);
+  position: absolute;
+
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 180px 30px 30px auto 50px 80px;
+  grid-template-areas:
+    "picture picture"
+    "orign orign"
+    "name name"
+    "description description"
+    "code language"
+    "wave wave";
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+.projects-carousel-list-item-picture {
+  grid-area: picture;
+  overflow: hidden;
+
+  & > img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.projects-carousel-list-item-orign {
+  grid-area: orign;
+  font-size: 0.9rem;
+  margin-left: 20px;
+
+  display: flex;
+  align-items: center;
+  color: #42526a;
+}
+
+.projects-carousel-list-item-name {
+  grid-area: name;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  display: flex;
+  align-self: center;
+}
+
+.projects-carousel-list-item-description {
+  grid-area: description;
+  margin: 10px 20px 0 20px;
+  color: #42526a;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.projects-carousel-list-item-code {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+  grid-area: code;
+
+  & > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > a > img {
+    object-fit: contain;
+    margin-right: 10px;
+  }
+
+  & > a:first-child > img {
+    width: 30px;
+  }
+
+  & > a:nth-child(2) > img {
+    width: 25px;
+  }
+}
+
+.projects-carousel-list-item-language {
+  margin-right: 20px;
+  grid-area: language;
+  font-size: 0.9rem;
+  color: #42526a;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.projects-carousel-list-item-wave {
+  grid-area: wave;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+.projects-carousel-list-item[data-position="0"] {
+  z-index: 5;
+}
+.projects-carousel-list-item[data-position="1"] {
+  transform: translateX(-55%) scale(0.9);
+  z-index: 4;
+}
+.projects-carousel-list-item[data-position="-1"] {
+  transform: translateX(55%) scale(0.9);
+  z-index: 4;
+}
+.projects-carousel-list-item[data-position="2"] {
+  transform: translateX(-100%) scale(0.8);
+  z-index: 3;
+}
+.projects-carousel-list-item[data-position="-2"] {
+  transform: translateX(100%) scale(0.8);
+  z-index: 3;
+}
+
+@media screen and (min-width: 412px) {
+  .projects {
+    height: 110vh;
+  }
+
+  .projects-carousel-list {
+    height: 550px;
+  }
+
+  .projects-carousel-list-item {
+    width: 300px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .projects {
+    height: 130vh;
+  }
+
+  .projects-carousel-list {
+    height: 700px;
+  }
+
+  .projects-carousel-list-item {
+    width: 465px;
+    height: 700px;
+    grid-template-rows: 250px 50px 50px auto 50px 80px;
+    border-radius: 30px;
+  }
+
+  .projects-carousel-list-item-picture {
+    & > img {
+      width: 100%;
+    }
+  }
+
+  .projects-carousel-list-item-orign {
+    font-size: 1.25rem;
+    margin-left: 24px;
+  }
+
+  .projects-carousel-list-item-name {
+    font-size: 2.188rem;
+    margin-left: 24px;
+  }
+
+  .projects-carousel-list-item-description {
+    grid-area: description;
+    margin: 15px 25px 0 25px;
+    font-size: 1.25rem;
+  }
+
+  .projects-carousel-list-item-code {
+    margin-left: 25px;
+
+    & > a > img {
+      margin-right: 10px;
+    }
+
+    & > a:first-child > img {
+      width: 40px;
+    }
+
+    & > a:nth-child(2) > img {
+      width: 30px;
+    }
+  }
+
+  .projects-carousel-list-item-language {
+    margin-right: 25px;
+    grid-area: language;
+    font-size: 1.25rem;
+  }
+}

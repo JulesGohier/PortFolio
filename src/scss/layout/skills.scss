@@ -1,0 +1,157 @@
+.skills {
+  height: 255vh;
+  width: 100%;
+  background: $background_section2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  overflow: hidden;
+
+  position: relative;
+
+  & > h2 {
+    text-transform: uppercase;
+    font-size: 3.125rem;
+    position: absolute;
+    left: calc(50% - 171px / 2);
+  }
+}
+
+.skills-img-spiral {
+  position: absolute;
+  top: -20px;
+  right: -70px;
+  width: 200px;
+}
+
+.skills-img-wave {
+  position: absolute;
+  bottom: 30px;
+  left: -40px;
+  width: 120px;
+}
+
+.skills-cards {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 65px auto 50px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+  background-color: $card-color_main;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  width: 350px;
+  height: 550px;
+
+  border-radius: 20px;
+}
+
+.skills-cards-title {
+  grid-area: header;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $card_color_header;
+  border-radius: 20px 20px 0 0;
+}
+
+.skills-cards-items {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5px 20px;
+  padding: 20px;
+
+  &-item {
+    max-width: 100px;
+    max-height: 150px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    &-logo {
+      width: 100px;
+      height: 90px;
+      object-fit: contain;
+    }
+
+    &-name {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.skills-cards-wave {
+  grid-area: footer;
+
+  & > svg {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .skills-img-spiral {
+    top: -30px;
+    right: -100px;
+    width: 300px;
+  }
+
+  .skills-img-wave {
+    bottom: 50px;
+    left: -40px;
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .skills {
+    height: 180vh;
+    align-content: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .skills {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .skills {
+    height: 100vh;
+  }
+  .skills-cards {
+    width: 400px;
+  }
+
+  .skills-cards-wave {
+    & > svg {
+      width: 400px;
+    }
+  }
+
+  .skills-img-spiral {
+    top: -60px;
+    right: -130px;
+    width: 400px;
+  }
+
+  .skills-img-wave {
+    bottom: 30px;
+    left: -40px;
+    width: 200px;
+  }
+}

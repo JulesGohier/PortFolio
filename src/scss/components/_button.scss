@@ -1,0 +1,29 @@
+.component-button {
+    text-transform: uppercase;
+    border: $main_color 0.2rem solid;
+    border-radius: 50px;
+    background-color: $background_button;
+}
+
+.hover-effect-button {
+    display: inline-block;
+    position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.2rem;
+    bottom: 0;
+    left: 0;
+    background-color: $main_color;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
