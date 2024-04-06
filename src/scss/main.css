@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -17,16 +19,25 @@ ul {
   padding: 0;
 }
 
+@font-face {
+  font-family: "Calistoga";
+  src: url("../assets/fonts/Calistoga-Regular.ttf") format("truetype");
+}
+
 body {
   font-family: "Calistoga", serif;
   font-size: 1.875rem;
-  color: #1D3354;
+  color: #1d3354;
 }
 
 .home {
   height: 97vh;
   width: 100%;
-  background: linear-gradient(180deg, rgb(211, 204, 227) 0%, rgb(233, 228, 240) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(211, 204, 227) 0%,
+    rgb(233, 228, 240) 100%
+  );
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 63px auto 45px;
@@ -52,7 +63,7 @@ body {
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
-  border-block: #1D3354 solid 3px;
+  border-block: #1d3354 solid 3px;
 }
 
 .home-header-menu {
@@ -321,7 +332,11 @@ body {
 .about {
   height: 130vh;
   width: 100%;
-  background: linear-gradient(180deg, rgb(233, 228, 240) 0%, rgb(211, 204, 227) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(233, 228, 240) 0%,
+    rgb(211, 204, 227) 100%
+  );
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -402,7 +417,11 @@ body {
 .projects {
   height: 110vh;
   width: 100%;
-  background: linear-gradient(180deg, rgb(211, 204, 227) 0%, rgb(233, 228, 240) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(211, 204, 227) 0%,
+    rgb(233, 228, 240) 100%
+  );
   overflow: hidden;
   position: relative;
 }
@@ -605,7 +624,11 @@ body {
 .skills {
   height: 255vh;
   width: 100%;
-  background: linear-gradient(180deg, rgb(233, 228, 240) 0%, rgb(211, 204, 227) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(233, 228, 240) 0%,
+    rgb(211, 204, 227) 100%
+  );
   display: flex;
   justify-content: center;
   align-content: center;
@@ -738,7 +761,11 @@ body {
 .contact {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(180deg, rgb(211, 204, 227) 0%, rgb(233, 228, 240) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(211, 204, 227) 0%,
+    rgb(233, 228, 240) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -748,7 +775,7 @@ body {
 }
 
 .contact-container {
-  border: solid 3px #1D3354;
+  border: solid 3px #1d3354;
   border-radius: 30px;
   width: 327px;
   height: 335px;
@@ -789,13 +816,13 @@ body {
   left: calc(50% - 84.5px);
   top: -22.5px;
   background: #c7c3d8;
-  border: solid 3px #1D3354;
+  border: solid 3px #1d3354;
   border-radius: 30px;
   padding: 0px 15px;
 }
 
 .message-container {
-  border: solid 3px #1D3354;
+  border: solid 3px #1d3354;
   border-radius: 30px;
   width: 327px;
   height: 335px;
@@ -855,9 +882,9 @@ body {
 }
 .component-button {
   text-transform: uppercase;
-  border: #1D3354 0.2rem solid;
+  border: #1d3354 0.2rem solid;
   border-radius: 50px;
-  background-color: #E6B7C3;
+  background-color: #e6b7c3;
 }
 
 .hover-effect-button {
@@ -872,7 +899,7 @@ body {
   height: 0.2rem;
   bottom: 0;
   left: 0;
-  background-color: #1D3354;
+  background-color: #1d3354;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

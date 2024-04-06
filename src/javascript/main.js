@@ -7,6 +7,14 @@ function changeDisplay() {
   }
 }
 
+let element = document.querySelectorAll(".changeDisplay");
+
+element.forEach((element) => {
+  element.addEventListener("click", function () {
+    changeDisplay();
+  });
+});
+
 const marqueeContent = document.querySelector(".home-footer-marquee");
 
 for (let i = 0; i < 20; i++) {
